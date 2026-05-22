@@ -1,0 +1,143 @@
+.lobby-wrapper {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lobby-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 2rem 2.5rem;
+  width: 26rem;
+  max-width: 95vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.lobby-logo {
+  width: 8rem;
+}
+
+.lobby-room-code {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: #f0f4ff;
+  padding: 0.6rem 1rem;
+  border-radius: 10px;
+  border: 2px solid #2b6fad;
+  width: 100%;
+  justify-content: center;
+
+  .code-label {
+    font-size: 0.85rem;
+    color: #555;
+  }
+
+  .code-value {
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: 0.25rem;
+    color: #2b6fad;
+  }
+}
+
+.copy-btn {
+  all: unset;
+  cursor: pointer;
+  font-size: 0.8rem;
+  color: #2b6fad;
+  padding: 0.2rem 0.5rem;
+  border: 1px solid #2b6fad;
+  border-radius: 6px;
+
+  &:hover { background: #e0eaf8; }
+}
+
+.lobby-settings {
+  display: flex;
+  gap: 1.2rem;
+  font-size: 0.85rem;
+  color: #555;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.lobby-players {
+  width: 100%;
+
+  h3 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1rem;
+    color: #333;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    max-height: 14rem;
+    overflow-y: auto;
+  }
+
+  li {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.3rem 0.6rem;
+    border-radius: 8px;
+    background: #f7f7f7;
+
+    &.me { background: #e8f5e9; }
+  }
+}
+
+.lobby-avatar {
+  width: 2rem;
+  height: 2rem;
+}
+
+.you-tag {
+  font-size: 0.75rem;
+  color: #2bab2b;
+  margin-left: 0.2rem;
+}
+
+.lobby-start {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.start-btn {
+  all: unset;
+  cursor: pointer;
+  background: #2bab2b;
+  color: #fff;
+  padding: 0.75rem 2.5rem;
+  border-radius: 14px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: background 0.2s;
+
+  &:hover:not(:disabled) { background: #1d851d; }
+
+  &:disabled {
+    background: #aaa;
+    cursor: default;
+  }
+}
+
+.lobby-waiting {
+  color: #888;
+  font-style: italic;
+  font-size: 0.9rem;
+}

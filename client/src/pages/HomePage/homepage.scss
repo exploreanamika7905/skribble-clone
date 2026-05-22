@@ -1,0 +1,126 @@
+.home {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.info {
+	padding: 2rem 3rem;
+	width: 20rem;
+	min-height: 24rem;
+	height: auto;
+	background-color: #fff;
+	border-radius: 15px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.input {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.logo {
+	height: 20%;
+	img { width: 7rem; }
+}
+
+.pic {
+	padding: 1rem 0;
+	height: 60%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	.greater-than {
+		display: flex;
+		flex-direction: column;
+		button { all: unset; cursor: pointer; img { max-width: 100%; max-height: 100%; } }
+	}
+	.less-than {
+		display: flex;
+		flex-direction: column;
+		button { all: unset; cursor: pointer; img { max-width: 100%; max-height: 100%; } }
+	}
+}
+
+.play {
+	all: unset;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0 1.5rem;
+	height: 3rem;
+	border-radius: 19px;
+	color: #fff;
+	background-color: #2bab2b;
+	cursor: pointer;
+	font-size: 1rem;
+	&:hover { background-color: #1d851d; }
+}
+
+.join-btn  { background-color: #2b6fad; &:hover { background-color: #1f5589; } }
+.back-btn  { background-color: #888;    &:hover { background-color: #666; } }
+
+.mode-buttons {
+	display: flex;
+	gap: 0.75rem;
+	margin-top: 0.75rem;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.room-form {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 0.5rem;
+	margin-top: 0.5rem;
+}
+
+.settings-row {
+	display: flex;
+	gap: 0.75rem;
+	flex-wrap: wrap;
+	justify-content: center;
+	label {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		font-size: 0.75rem;
+		gap: 0.25rem;
+		input {
+			width: 4rem;
+			text-align: center;
+			border: 1px solid #ccc;
+			border-radius: 6px;
+			padding: 0.2rem;
+		}
+	}
+}
+
+.join-row { display: flex; justify-content: center; }
+
+.room-code-input {
+	font-size: 1.1rem;
+	letter-spacing: 0.2rem;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 0.4rem 0.75rem;
+	border: 2px solid #2b6fad;
+	border-radius: 8px;
+	width: 12rem;
+}
+
+.error-msg {
+	color: #c00;
+	font-size: 0.8rem;
+	margin-top: 0.25rem;
+	text-align: center;
+}
