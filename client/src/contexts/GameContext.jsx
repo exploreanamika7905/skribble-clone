@@ -1,5 +1,6 @@
 import { createContext, useState } from "react";
 import { io } from "socket.io-client";
+import PropTypes from 'prop-types';
 
 const SOCKET_URL = import.meta.env.VITE_SERVER_URL || "http://localhost:3001";
 const socket = io(SOCKET_URL);
@@ -85,4 +86,8 @@ export const GameContextProvider = ({ children }) => {
   };
 
   return <GameContext.Provider value={value}>{children}</GameContext.Provider>;
+};
+
+GameContextProvider.propTypes = {
+  children: PropTypes.node.isRequired,
 };
